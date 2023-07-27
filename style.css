@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&family=Trirong:wght@400;600;700&display=swap');
+
+:root {
+
+    --first-font: 'Rubik', sans-serif;
+    --second-font: 'Trirong', serif;
+    
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    --fs-xs: 1.25rem;
+    --fs-s: 1.5rem;
+    --fs-m: 2rem;
+    --fs-l: 2.1875rem;
+    --fs-xl: 2.5rem;
+    
+    --hue-color: 60;
+    --grey-value: 0;
+
+    --primary-color-50: hsl(var(--hue-color), 100%, 80%);
+    --primary-color-100: hsl(var(--hue-color), 100%, 72%);
+    --primary-color-200: hsl(var(--hue-color), 100%, 64%);
+    --primary-color-300: hsl(var(--hue-color), 100%, 56%);
+    --primary-color-400: hsl(var(--hue-color), 100%, 48%);
+    --primary-color-500: hsl(var(--hue-color), 100%, 40%);
+    --primary-color-600: hsl(var(--hue-color), 100%, 32%);
+    --primary-color-700: hsl(var(--hue-color), 99%, 32%);
+    --primary-color-800: hsl(var(--hue-color), 99%, 24%);
+    --primary-color-900: hsl(var(--hue-color), 99%, 16%);
+    
+    --grey-scale-50: hsl(var(--grey-value), 0%, 96%);
+    --grey-scale-100: hsl(var(--grey-value), 0%, 72%);
+    --grey-scale-200: hsl(var(--grey-value), 0%, 64%);
+    --grey-scale-300: hsl(var(--grey-value), 0%, 56%);
+    --grey-scale-400: hsl(var(--grey-value), 0%, 48%);
+    --grey-scale-500: hsl(var(--grey-value), 0%, 40%);
+    --grey-scale-600: hsl(var(--grey-value), 0%, 32%);
+    --grey-scale-700: hsl(var(--grey-value), 0%, 24%);
+    --grey-scale-800: hsl(var(--grey-value), 0%, 16%);
+    --grey-scale-900: hsl(var(--grey-value), 0%, 8%);    
+
+}
+
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;    
+}
+
+.header {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey-scale-900);
+    font-family: var(--first-font);
+    font-weight: var(--font-semi-bold);
+}
+
+.header a {
+    color: white;
+}
+
+.header li > a {
+    margin-left: 2rem;
+}
+
+.header a:hover {
+    color: var(--primary-color-300);
+    transition: .4s;
+}
+
+ul {
+    display: flex;
+}
+
+button {
+    color: var(--primary-color-900);
+    height: 40px;
+    width: 200px;
+    font-size: var(--fs-xs);
+    font-family: var(--first-font);
+    border: none;
+    border-radius: 4px;
+    background-image: 
+        -webkit-linear-gradient(#F7F701, #DADA08);
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: var(--grey-scale-200);
+}
+
+@media (max-width:600px) {
+    .header a {
+        color: yellow;
+    }
+}
+
+.main {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--grey-scale-50);
+    padding: 0rem 4rem;
+}
+
+main h1 {
+    font-size: var(--fs-xl);
+    line-height: 1;
+    color: var(--primary-color-900);
+    font-family: var(--second-font);
+    font-weight: var(--font-semi-bold:);
+    padding-bottom: 1.5rem;
+}
+
+main p {
+    color: var(--grey-scale-900);
+    font-size: var(--fs-s);
+    font-family: var(--first-font);
+    padding-bottom: 2rem;
+}
+
+.about {
+    height: 600px;
+    background-color: white;
+}
+
+.about img {
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    padding-left: 80px;
+}
+
+.h1 {
+    font-family: var(--second-font);
+    color: var(--primary-color-900);
+    font-size: var(--fs-xl);
+    padding: 3.5rem;
+}
+
+.h2 {
+    font-size: var(--fs-m);
+    font-family: var(--first-font);
+    color: var(--primary-color-900);
+    padding-bottom: 1rem;
+}
+
+.paragraph {
+    padding-bottom: 1rem;
+
+}
+
+.products {
+    height: 600px;
+    background: var(--grey-scale-50);
+}
+
+.products img {
+    max-width: 200px;
+    max-height: 200px;
+    padding-left: 10rem;
+}
+
+.product-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    margin: 1rem 5rem;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.20);
+}
+
+.icons {
+    
+}
