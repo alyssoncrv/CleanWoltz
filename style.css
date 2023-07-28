@@ -49,6 +49,27 @@
     padding: 0;    
 }
 
+.products p, 
+.services p {
+    color: var(--grey-scale-900);
+    font-family: var(--first-font);
+}
+
+.products p {
+    text-align: justify;
+}
+
+.services p {
+    text-align: center;
+}
+
+.h1 {
+    font-family: var(--second-font);
+    color: var(--primary-color-900);
+    font-size: var(--fs-xl);
+    padding: 3.5rem;
+}
+
 .header {
     padding: 2rem;
     display: flex;
@@ -123,6 +144,10 @@ main p {
     padding-bottom: 2rem;
 }
 
+main img {
+    padding-left: 10rem;
+}
+
 .about {
     height: 600px;
     background-color: white;
@@ -133,17 +158,11 @@ main p {
     max-height: 400px;
     width: auto;
     height: auto;
-    padding-left: 80px;
+    padding-left: 12rem;
 }
 
-.h1 {
-    font-family: var(--second-font);
-    color: var(--primary-color-900);
-    font-size: var(--fs-xl);
-    padding: 3.5rem;
-}
 
-.h2 {
+h2 {
     font-size: var(--fs-m);
     font-family: var(--first-font);
     color: var(--primary-color-900);
@@ -152,18 +171,20 @@ main p {
 
 .paragraph {
     padding-bottom: 1rem;
-
 }
 
 .products {
-    height: 600px;
+    height: 960px;
     background: var(--grey-scale-50);
 }
 
+.product-img {
+    margin-left: auto;
+}
+
 .products img {
-    max-width: 200px;
-    max-height: 200px;
-    padding-left: 10rem;
+    max-width: 280px;
+    max-height: 280px;
 }
 
 .product-item {
@@ -175,5 +196,76 @@ main p {
 }
 
 .icons {
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.icons div {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.icons span {
+    padding-left: 1rem;
+}
+
+.message {
+    height: 560px;
+    display: grid;
+    grid-template-columns: .4fr .6fr;
+}
+
+.message-bg {
+    background-color: var(--primary-color-100);
+}
+
+.message img {
+    max-width: 640px;
+    max-height: 640px;
+}
+
+.services {
+    background: var(--grey-scale-50);
+    height: 600px;
+}
+
+.services h2 {
+    text-align: center;
+}
+
+.services-items {
+    padding: 0rem 2rem;
+    display: flex;
+    text-align: center;
+}
+
+.services img {
+    max-width: 240px;
+}
+
+.services h3, p {
+    padding: 1rem;
+}
+
+footer {
+    height: 280px;
+    background-color: var(--grey-scale-900);
+}
+
+footer h1 {
+    color: var(--grey-scale-50);
+    font-family: var(--second-font);
+    font-size: var(--fs-xl);
+    padding: 2rem;
+}
+
+footer ul {
+    display: block;
+}
+
+footer li {
+    font-family: var(--first-font);
+    color: var(--grey-scale-50);
+    padding: 1rem 2rem;
 }
