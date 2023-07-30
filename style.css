@@ -49,18 +49,32 @@
     padding: 0;    
 }
 
-.products p, 
-.services p {
-    color: var(--grey-scale-900);
+ul {
+    display: flex;
+}
+
+button {
+    color: var(--primary-color-900);
+    height: 40px;
+    width: 200px;
+    font-size: var(--fs-xs);
     font-family: var(--first-font);
+    border: none;
+    border-radius: 4px;
+    background-image: 
+        -webkit-linear-gradient(#F7F701, #DADA08);
+    cursor: pointer;
 }
 
-.products p {
-    text-align: justify;
+button:hover {
+    background-image: var(--grey-scale-200);
 }
 
-.services p {
-    text-align: center;
+h2 {
+    font-size: var(--fs-m);
+    font-family: var(--first-font);
+    color: var(--primary-color-900);
+    padding-bottom: 1rem;
 }
 
 .h1 {
@@ -91,33 +105,6 @@
 .header a:hover {
     color: var(--primary-color-300);
     transition: .4s;
-}
-
-ul {
-    display: flex;
-}
-
-button {
-    color: var(--primary-color-900);
-    height: 40px;
-    width: 200px;
-    font-size: var(--fs-xs);
-    font-family: var(--first-font);
-    border: none;
-    border-radius: 4px;
-    background-image: 
-        -webkit-linear-gradient(#F7F701, #DADA08);
-    cursor: pointer;
-}
-
-button:hover {
-    background-image: var(--grey-scale-200);
-}
-
-@media (max-width:600px) {
-    .header a {
-        color: yellow;
-    }
 }
 
 .main {
@@ -161,14 +148,6 @@ main img {
     padding-left: 12rem;
 }
 
-
-h2 {
-    font-size: var(--fs-m);
-    font-family: var(--first-font);
-    color: var(--primary-color-900);
-    padding-bottom: 1rem;
-}
-
 .paragraph {
     padding-bottom: 1rem;
 }
@@ -193,6 +172,20 @@ h2 {
     padding: 2rem;
     margin: 1rem 5rem;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.20);
+}
+
+.products p, 
+.services p {
+    color: var(--grey-scale-900);
+    font-family: var(--first-font);
+}
+
+.products p {
+    text-align: justify;
+}
+
+.services p {
+    text-align: center;
 }
 
 .icons {
@@ -244,7 +237,7 @@ h2 {
     max-width: 240px;
 }
 
-.services h3, p {
+.services h2, p {
     padding: 1rem;
 }
 
@@ -268,4 +261,69 @@ footer li {
     font-family: var(--first-font);
     color: var(--grey-scale-50);
     padding: 1rem 2rem;
+}
+
+@media (max-width:900px) {
+
+    .header a {
+        color: blue;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .box-1 {
+        padding: 4rem 0rem 0rem 0rem;
+    }
+
+    .products {
+        height: 840px;
+    }
+
+    .product-img {
+        display: none;
+    }
+
+    .product-item {
+        display: block;
+    }
+
+}
+
+@media (max-width:780px) {
+    .header a {
+        color: red;
+    }
+
+    .services {
+        height: 440px;
+    }
+
+    .services img {
+        display: none;
+    }
+}
+
+@media (max-width:700px) {
+
+    .main img {
+        padding-left: 0rem;
+    }
+
+    .about img {
+        padding-left: 5rem;
+    }
+}
+
+@media (max-width:600px) {
+
+    .header a {
+        color: yellow;
+    }
+
+    .services h2 {
+        word-break: break-all;
+    }
 }
