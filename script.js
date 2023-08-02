@@ -1,17 +1,9 @@
-const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
-
-
-if (navToggle) {
-   navToggle.addEventListener('click', () =>{
-     navMenu.classList.add('show_menu')
-   }) 
-}
-
-
-if (navClose) {
-    navClose.addEventListener('click', ()=> {
-        navMenu.classList.remove('show_menu')
-    })
+function menuShow() {
+  let menuMobile = document.querySelector('.mobile-menu');
+  if (menuMobile.classList.contains('open')) {
+    menuMobile.classList,remove('open');
+    document.querySelector('.icon').src = ''
+  } else {
+    menuMobile.classList.add('open');
+  }
 }

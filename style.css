@@ -107,6 +107,14 @@ h2 {
     transition: .4s;
 }
 
+.nav-list-mobile {
+
+}
+
+.menu-btn, .mobile-menu {
+    display: none;
+}
+
 .main {
     display: grid;
     align-items: center;
@@ -323,7 +331,27 @@ footer li {
         color: yellow;
     }
 
+    .nav-list {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .open {
+        display: block;
+    }
+
     .services h2 {
         word-break: break-all;
     }
+
 }
