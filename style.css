@@ -4,7 +4,8 @@
 
     --first-font: 'Rubik', sans-serif;
     --second-font: 'Trirong', serif;
-    
+    background-color: var(--grey-scale-900);
+
     --fw-regular: 400;
     --fw-medium: 500;
     --fw-semi-bold: 600;
@@ -95,10 +96,11 @@ h2 {
 
 .header {
     padding: var(--fs-600);
+    margin: 0 auto;
+    max-width: 960px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--grey-scale-900);
     font-family: var(--first-font);
     font-weight: var(--fw-semi-bold);
 }
