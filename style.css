@@ -294,20 +294,12 @@ footer li {
         margin: 0 var(--space-300);
     }
 
-    .main {
-        padding: 0 var(--space-300);
-    }
-
-    .about {
+    .main, .about, .services {
         padding: 0 var(--space-300);
     }
 
     .products {
         padding: 0 var(--space-300) var(--space-300) var(--space-300);
-    }
-
-    .services {
-        padding: 0 var(--space-300);
     }
     
 }
