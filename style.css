@@ -127,7 +127,42 @@
     padding: var(--space-100);
 }
 
-.menu-btn, .mobile-menu {
+#toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4px;;
+    border: 0;
+    background: transparent;
+    margin-top: 50px;
+}
+
+#toggle:hover {
+    cursor: pointer;
+}
+
+#toggle span {
+    width: 30px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--grey-scale-400);
+    transition: all .4s;
+}
+
+#toggle.active span:nth-child(2) {
+    opacity: 0;
+    width: 20px;
+}
+
+#toggle.active span:nth-child(1) {
+    transform: translate(-4px, 4px) rotate(-45deg);
+}
+
+#toggle.active span:nth-child(1) {
+    transform: translate(-5px, 4px) rotate(45deg);
+}
+
+.mobile-menu {
     display: none;
 }
 
