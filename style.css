@@ -196,9 +196,12 @@
 }
 
 .about {
-    position: absolute;
     max-width: 960px;
     margin: 0 auto;
+}
+
+.absolute {
+    position: absolute;
 }
 
 .about-img-1 {
@@ -206,7 +209,7 @@
     float: right;
     position: relative;
     top: -560px;
-    right: 150px;
+    right: -100px;
 }
 
 .about-img-2 {
@@ -214,7 +217,7 @@
     float: right;
     position: relative;
     top: -305px;
-    right: -240px;
+    right: -500px;
 }
 
 .about-img-3 {
@@ -222,7 +225,7 @@
     float: right;
     position: relative;
     top: -140px;
-    right: -280px;
+    right: -530px;
 }
 
 .products-container {
@@ -286,8 +289,13 @@
 }
 
 .message {
-    max-height: 520px;
+    max-height: 560px;
     display: flex;
+}
+
+.message img {
+    max-width: 560px;
+    max-height: 560px;
 }
 
 .message-bg {
@@ -295,29 +303,29 @@
 }
 
 .quote-1, .quote-2 {
-    position: absolute;
+    position: relative;
 }
 
 .quote-1 {
     top: 426%;
     max-width: 50px;
-    z-index: 0;
 }
 
 .quote-2 {
     top: 456%;
     max-width: 50px;
-    z-index: 0;
     left: 90%;
 }
 
-.message p {
-    z-index: 1;
+.message-bg p {
     font-size: var(--fs-400);
     font-family: var(--second-font);
     color: var(--primary-color-900);
     text-align: justify;
-    padding: var(--space-200) var(--space-200) 0 var(--space-400);
+    padding: var(--space-200) 
+            var(--space-200) 
+            0 
+            var(--space-400);
 }
 
 .services-container {
